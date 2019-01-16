@@ -1,0 +1,5 @@
+name: GreetMsg
+api: [3.0.0, 3.3.2, 4.0.0]
+version: 1.0
+author: Hytlenz
+main: Hytlenz\Main

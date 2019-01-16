@@ -1,0 +1,19 @@
+#GreetMsg Configuration
+#By Hytlenz
+#Variables {player}, \n
+
+#Welcome Message
+welcome_msg: "§l§b> Welcome to your Server {player} \n§l§a> Invite More Players!"
+
+#Join Title
+title: "§l§bMy Server"
+
+#Join Sub Title
+subtitle: "§l§aWelcome {player}"
+
+#Voice Message
+voice_msg: "Hello, Welcome to my Local Test Server {player} This message is brought to you by LentoKun"
+
+#Time 20 ticks = 1 second
+time_title: 60
+
