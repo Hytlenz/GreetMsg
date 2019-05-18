@@ -11,7 +11,7 @@ title: "§l§bMy Server"
 #Join Sub Title
 subtitle: "§l§aWelcome {player}"
 
-#Voice Message
+#Voice Message // Just Make Sure You On Voice Message in Settings
 voice_msg: "Hello, Welcome to my Local Test Server {player} This message is brought to you by LentoKun"
 
 #Time 20 ticks = 1 second
