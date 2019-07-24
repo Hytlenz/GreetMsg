@@ -51,7 +51,7 @@ class SendTask extends Task implements Listener{
 		$this->player->dataPacket($pk);
 		
 		$effect = new EffectInstance(Effect::getEffect(Effect::BLINDNESS), 100, 0, false);
-        $this->player->addEffect($effect);
+        $this->player->addEffect($effect)
             
 	}
 } 
