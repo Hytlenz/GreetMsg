@@ -43,15 +43,17 @@ class SendTask extends Task implements Listener{
         $this->player->addTitle($title, $subtitle, 20, $time, 40);
         $this->player->sendTranslation($voice);
         $this->player->sendMessage($welcome);
-        
-        $pk = new LevelEventPacket();
+	
+        $eff = $this->main->getConfig()->get("welcome_effect");
+	
+                $pk = new LevelEventPacket();
 		$pk->evid = LevelEventPacket::EVENT_GUARDIAN_CURSE;
 		$pk->data = 0;
 		$pk->position = $this->player->asVector3();
 		$this->player->dataPacket($pk);
-		
+
 		$effect = new EffectInstance(Effect::getEffect(Effect::BLINDNESS), 100, 0, false);
-        $this->player->addEffect($effect);
+                $this->player->addEffect($effect);
             
 	}
 } 
