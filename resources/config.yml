@@ -1,19 +1,18 @@
+---
 #GreetMsg Configuration
 #By Hytlenz
 #Variables {player}, \n
 
+# msg: - welcome message
+# title: - the title when the player join
+# subtitle: - the subtitle when the player join
+# voice: - when the voice is on in settings
+
 #Welcome Message
-welcome_msg: "§l§b> Welcome to your Server {player} \n§l§a> Invite More Players!"
-
-#Join Title
-title: "§l§bMy Server"
-
-#Join Sub Title
-subtitle: "§l§aWelcome {player}"
-
-#Voice Message // Just Make Sure You On Voice Message in Settings
-voice_msg: "Hello, Welcome to my Local Test Server {player} This message is brought to you by LentoKun"
-
-#Time 20 ticks = 1 second
-time_title: 60
-
+welcome:
+ msg: "§l§b> Welcome to your Server {player} \n§l§a> Invite More Players!"
+ title: "§l§bMy Server"
+ subtitle: "§l§aWelcome {player}"
+ voice_msg: "Hello, Welcome to my Local Test Server {player} This message is brought to you by LentoKun"
+ 
+ ...
