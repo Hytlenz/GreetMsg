@@ -26,26 +26,22 @@ class SendTask extends Task implements Listener{
 	}
 
 	public function onRun($currentTick){
-		$title = $this->main->getConfig()->get("title");
-        $title = str_replace("{player}", $this->player->getName(), $title);
+		$title = $this->main->getConfig()->get("welcome.title");
+        	$title = str_replace("{player}", $this->player->getName(), $title);
         
-        $subtitle = $this->main->getConfig()->get("subtitle");
-        $subtitle = str_replace("{player}", $this->player->getName(), $subtitle);
+        	$subtitle = $this->main->getConfig()->get("welcome.subtitle");
+        	$subtitle = str_replace("{player}", $this->player->getName(), $subtitle);
         
-        $time = $this->main->getConfig()->get("time_title");
+        	$voice = $this->main->getConfig()->get("welcome.voice_msg");
+        	$voice = str_replace("{player}", $this->player->getName(), $voice);
         
-        $voice = $this->main->getConfig()->get("voice_msg");
-        $voice = str_replace("{player}", $this->player->getName(), $voice);
+        	$welcome = $this->main->getConfig()->get("welcome.msg");
+        	$welcome = str_replace("{player}", $this->player->getName(), $welcome);
         
-        $welcome = $this->main->getConfig()->get("welcome_msg");
-        $welcome = str_replace("{player}", $this->player->getName(), $welcome);
-        
-        $this->player->addTitle($title, $subtitle, 20, $time, 40);
-        $this->player->sendTranslation($voice);
-        $this->player->sendMessage($welcome);
-	
-        $eff = $this->main->getConfig()->get("welcome_effect");
-	
+        	$this->player->addTitle($title, $subtitle);
+        	$this->player->sendTranslation($voice);
+        	$this->player->sendMessage($welcome);
+		
                 $pk = new LevelEventPacket();
 		$pk->evid = LevelEventPacket::EVENT_GUARDIAN_CURSE;
 		$pk->data = 0;
