@@ -1,0 +1,49 @@
+---
+#GreetMsg Configuration
+#By Lentou (formerly Hytlenz)
+# ---
+# @player - for getting name of player
+# & - for using colors
+# # - for line break
+# ---
+# You can false other functions
+
+# The Event Sends a Message
+welcome-message:
+  enable: true
+  message: "&l&8----------#&8- &fWelcome to &bServerCraftPE#&8- &b@player#&8- &oStay Savage! &b-Lentou#&l&8----------"
+
+# The Event Sends a Header Message
+header-message:
+  enable: true
+  title: "&oWelcome to &bServer"
+  subtitle: "&b@player"
+
+# The Event Sends a Form
+form-message:
+  enable: true
+  form-type: "Modal" #Modal or Simple
+  form-title: "&l&eWelcome!"
+  content: "Hello, Welcome to my Test Server# @player This is a Join Form"
+  modal:
+    button1: "&l&oI read it"
+    button2: "&l&oAlright"
+  simple:
+    button: "&l&oAdventure Begins!"
+    image-type: 0 #0 for default image path in texture pack, 1 for url from internet
+    image-path: "textures/items/gold_sword"
+  
+
+# The Event Gives You a Effect
+effect:
+  enable: true
+  side-effect: 1 #effect id 
+  duration: 10 #duration of effect
+  amplifier: 2 #amplifier
+  visible: true #is this visible? or not
+
+# The Event Gives You a Heart Attack
+event-packet:
+  enable: true
+
+...
