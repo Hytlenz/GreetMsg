@@ -10,7 +10,7 @@ Features:
  - NEW! Enable Settings
  - JoinMessage
  - JoinTitle
- - JoinVoiceMessage (Enable Text To Speech For Chat in Settings > Audio)
+
  - NO NEED TO INSTALL FormAPI
 
 My YT: www.youtube.com/c/LentoKun
