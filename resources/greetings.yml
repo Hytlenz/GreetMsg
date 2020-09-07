@@ -1,17 +1,21 @@
 ---
-#GreetMsg Configuration
-#By Lentou (formerly Hytlenz)
+# GreetMsg Configuration
+# By Lentou (formerly Hytlenz)
 # ---
 # @player - for getting name of player
 # & - for using colors
-# # - for line break
+# # - for breaking the line
 # ---
 # You can false other functions
 
 # The Event Sends a Message
 welcome-message:
   enable: true
-  message: "&l&8----------#&8- &fWelcome to &bServerCraftPE#&8- &b@player#&8- &oStay Savage! &b-Lentou#&l&8----------"
+  message: 
+    - "&l&8<-(&aWelcome to My Server&8)->&r"
+    - "&7- Greetings, &b@player"
+    - "&7- Edit Me in &agreetings.yml"
+    - "&7- Plugin Author: &bLentou"
 
 # The Event Sends a Header Message
 header-message:
@@ -24,7 +28,9 @@ form-message:
   enable: true
   form-type: "Modal" #Modal or Simple
   form-title: "&l&eWelcome!"
-  content: "Hello, Welcome to my Test Server# @player This is a Join Form"
+  content: 
+    - "Hello, Welcome to my Test Server
+    - "@player This is a Join Form"
   modal:
     button1: "&l&oI read it"
     button2: "&l&oAlright"
@@ -40,7 +46,6 @@ effect:
   side-effect: 1 #effect id 
   duration: 10 #duration of effect
   amplifier: 2 #amplifier
-  visible: true #is this visible? or not
 
 # The Event Gives You a Heart Attack
 event-packet:
